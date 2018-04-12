@@ -30,6 +30,8 @@ int main()
 	cin >> action;
 	switch (action)
 	{
+		case 0:
+			break;
 		case 1:
 			cout << "\nEnter value: ";
 			cin >> value;
