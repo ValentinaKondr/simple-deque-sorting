@@ -1,17 +1,22 @@
 #include "stdafx.h"
 
 #include <iostream>
-#include <random>
-#include <time.h>
+#include <random>	//Генерация случайных чисел
+#include <time.h>	// -//-
 
 #include "MyDeque.h"
 
 using namespace std;
 
+//Создание пустого дека
 MyDeque::MyDeque() : head(NULL), tail(NULL), size(0) {}
 
 void MyDeque::pushFront(int value)
 {
+	// Создается новое звено, и, если
+	// дек пуст, добавляет его, а ссылки на 
+	// следующий и предыдущий элемент делает NULL
+	// Иначе просто добавляет элемент 
 	Node* newNode = new Node;
 	if (isEmpty())
 	{
@@ -135,6 +140,7 @@ MyDeque::~MyDeque()
 	clear();		
 }
 
+//Вывод на экран содержимого дека
 void MyDeque::showIt()
 {
 	Node* buffRef = head;
@@ -146,6 +152,7 @@ void MyDeque::showIt()
 	cout << endl;
 }
 
+//Сортировка пузырьком
 void MyDeque::bSort()
 {
 	Node* buffRef  = head;
