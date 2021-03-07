@@ -172,7 +172,7 @@ void MyDeque::bSort()
 	}
 }
 
-void trySort(int size, MyDeque deque)
+void trySort(int size, const MyDeque& deque)
 {
 	srand(time(0));
 	for(int i = 0; i < size; i++)
