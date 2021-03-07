@@ -27,6 +27,6 @@ public:
 	void bSort();
 	~MyDeque();
 };
-void trySort(int size, const MyDeque& deque);
+void trySort(int size);
 
 #endif // !DEQUE
