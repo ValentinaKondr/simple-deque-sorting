@@ -55,16 +55,16 @@ int main()
 			d.bSort();
 			break;
 		case 7:
-			trySort(10, d);
+			trySort(10);
 			break;
 		case 8:
-			trySort(100, d);
+			trySort(100);
 			break;
 		case 9:
-			trySort(1000, d);
+			trySort(1000);
 			break;
 		case 10:
-			trySort(10000, d);
+			trySort(10000);
 			break;
 		default:
 			cout << " Default";
